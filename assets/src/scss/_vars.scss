@@ -1,0 +1,42 @@
+$brand-1: rgb(118, 46, 235);
+$b1-acc: rgb(138, 78, 235);
+$white: #ffffff;
+$black: #000000;
+$gs-1: #1a1d24;
+$gs-2: #444;
+$gs-3: #676767;
+$gs-4: #797979;
+$gs-5: #EEE;
+$gs-6: #F7F7F7;
+
+$light-shadow: 0 0 20px rgba(0, 0, 0, 0.175);
+
+@mixin btn {
+    display: inline-block;
+    padding: 1em 1.5em;
+    margin: 1em 0 0 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 600;
+    color: $white;
+    background-color: $brand-1;
+    text-align: center;
+    transition: all 0.2s;
+    border: none;
+    &:hover {
+        background-color: $b1-acc;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+@mixin line {
+    margin: 20px auto;
+    border: none;
+    height: 4px;
+    float: none;
+    background: $brand-1;
+    width: 60px;
+}

@@ -1,0 +1,32 @@
+footer {
+  background: $gs-5;
+  padding: 20px 0 0 0;
+  .col-2 {
+    img {
+      padding: 25px;
+    }
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      line-height: 168%;
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        color: $gs-3;
+      }
+    }
+  }
+  p {
+    margin: 0 0 0 0;
+    color: $gs-1;
+    font-size: 14px;
+  }
+
+  .bottom-bar {
+    p {
+      padding: 10px 15px;
+    }
+  }
+}

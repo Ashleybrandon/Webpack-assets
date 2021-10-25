@@ -1,0 +1,29 @@
+.basic-hero {
+    padding: 130px 0 130px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0 0 0 0;
+        color: $white;
+        line-height: 163%;
+    }
+    h4, h5 {
+        padding: 20px 0 40px 0; 
+        font-weight: 400;
+    }
+    h6 {
+        padding: 0px 0 40px 0; 
+        font-weight: 400;
+    }
+
+}
+
+.basic-hero {
+    .col-8 {
+        width: auto;
+        max-width: 96%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,41 @@
+.hs-blog-post {
+    .related-posts-feed.section {
+        padding: 30px 0 40px 0;
+        background: $apexgrey;
+
+        h2 {
+            color: $apexpink;
+            max-width: 916px;
+            margin: 20px auto;
+        }
+
+        .splide__slide {
+            display: flex;
+            background: $apexblue;
+            overflow: hidden;
+            height: 195px;
+            h3, h4, h5, h6 {
+                color: $white;
+            }
+        }
+
+        .rel-posts-image {
+            width: 250px;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .blog_info {
+            position: absolute;
+            left: 250px;
+            width: auto;
+            padding-left: 40px;
+        }
+
+    }
+}

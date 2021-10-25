@@ -1,0 +1,35 @@
+section.skew-up {
+    transform: skew(0deg, -3deg);
+    background-color: $gs-5;
+    .skew-counter {
+        transform: skew(0deg, 3deg);
+    }
+}
+
+section.skew-down {
+    transform: skew(0deg, 3deg);
+    background-color: $gs-5;
+    .skew-counter {
+        transform: skew(0deg, -3deg);
+    }
+}
+
+.cards-over-skew {
+    position: relative;
+    .overlapped-skew {
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 38%;
+        height: 450px;
+        width: 100%;
+        z-index: -1;
+        transform: skew(0deg, -3deg);
+    }
+    .flex-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+

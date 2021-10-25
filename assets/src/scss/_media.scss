@@ -1,0 +1,498 @@
+/* Standard Media Queries */
+
+@media (max-width: 1220px) {
+  .row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar .row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar .row {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1081px) {
+  .child-trigger {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .navbar {
+    padding: 7px;
+  }
+
+  .navbar .site-menu-list {
+    display: none;
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .navbar .site-menu-list.active {
+    max-height: none;
+    display: block;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    background-color: $gs-1;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .navbar li {
+    display: block;
+  }
+
+  .navbar li a {
+    padding: 20px 30px;
+  }
+
+  .level-1.menu-list li a {
+    padding: 10px 20px;
+  }
+
+  .navbar .row .col-8 {
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    top: 80px;
+    z-index: 10;
+  }
+
+  .navbar li {
+    padding: 0 0 0 0;
+  }
+
+  .menu-item-has-children .sub-menu-show {
+    height: auto;
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 0;
+    padding: 0 20px 20px 20px;
+  }
+
+  .child-trigger {
+    display: inline-block !important;
+  }
+
+  .hs-item-has-children {
+    &:hover .hs-menu-children-wrapper {
+      height: 0;
+    }
+  }
+
+  li.hs-menu-item a {
+    &:hover .hs-menu-children-wrapper.level-2.menu-list.sub-menu-show {
+      padding-top: 0;
+    }
+  }
+
+  .hs-menu-children-wrapper.level-2.menu-list.sub-menu-show {
+    padding-top: 0;
+  }
+
+  //remove show on hover from desktop site
+  .hs-item-has-children {
+    &:hover .hs-menu-children-wrapper.sub-menu-show {
+      height: 0;
+      position: relative;
+      top: initial;
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
+
+  .sub-menu .menu-item a.nav-link {
+    color: #fff;
+  }
+  .navbar .inner-menu-container {
+    display: none;
+    clear: both;
+    max-height: 0;
+    transition: height 0.2s ease-out;
+  }
+  .navbar .inner-menu-container.active {
+    max-height: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .acc-content,
+  .acc-button {
+    width: 96%;
+  }
+
+  .navbar .row .col-2.mobile-menu {
+    width: 100%;
+    padding: 7px !important;
+  }
+
+  .navbar .site-menu-list {
+    display: none;
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .navbar .site-menu-list.active {
+    max-height: none;
+    display: block;
+    text-align: center;
+  }
+
+  .navbar .menu-icon {
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    background-color: $gs-1;
+    height: auto;
+    text-align: left;
+    padding-top: 0;
+    li a {
+      &:hover {
+        color: $brand-1;
+      }
+    }
+  }
+
+  .top-nav .row ul {
+    padding: 0 0 0 0;
+  }
+
+  .navbar ul.hs-menu-children-wrapper {
+    position: relative;
+    margin: initial;
+  }
+  .hs-menu-children-wrapper.level-2.menu-list.sub-menu-show {
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navbar .hs-menu-children-wrapper li {
+    margin: 0 auto;
+    border: none;
+    background: $gs-1;
+  }
+
+  .navbar li {
+    display: block;
+  }
+
+  .navbar li a {
+    padding: 10px 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .navbar .row .col-8 {
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    top: 70px;
+    z-index: 10;
+  }
+
+  .navbar li {
+    padding: 0 0 0 0;
+  }
+
+  .hs-item-has-children .sub-menu-show {
+    height: auto !important;
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 0;
+    padding: 10px 0;
+    box-shadow: none;
+  }
+
+  .child-trigger {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .sub-menu .menu-item a.nav-link {
+    color: #fff;
+  }
+  .navbar .inner-menu-container {
+    display: none;
+    clear: both;
+    max-height: 0;
+    transition: height 0.2s ease-out;
+  }
+  .navbar .inner-menu-container.active {
+    max-height: none;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .navbar .row {
+    height: auto;
+  }
+
+  .navbar .row .col-10 ul {
+    padding-bottom: 0;
+  }
+
+  .navbar [class*="col-"] {
+    width: 100%;
+    padding: 0;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .top-nav .menu-list {
+    text-align: left;
+    li a {
+      color: $white;
+    }
+  }
+
+  .navbar .row {
+    width: 100%;
+    max-width: 100%;
+    background-color: $gs-1 !important;
+
+    .col-10 {
+      width: 100%;
+      margin: 0 0 0 0;
+    }
+    .col-12 {
+      align-items: flex-start;
+    }
+  }
+
+  .topnav .row .col-12 li a {
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .mobile-menu {
+    display: block !important;
+  }
+
+  .desktop-menu {
+    display: none !important;
+  }
+
+  .navbar .col-10 ul li:nth-of-type(8) {
+    margin-top: 10px;
+    margin-left: 10px;
+    a {
+      padding: 0 0 0 0;
+    }
+  }
+
+  .navbar .hs-menu-children-wrapper li {
+    padding: 3px 15px;
+  }
+
+  .hs-menu-children-wrapper .hs-menu-item a {
+    padding: 15px 10px 5px 10px !important;
+    line-height: 150%;
+  }
+  .navbar ul li a {
+    &:hover {
+      color: $brand-1;
+      text-decoration: none;
+    }
+  }
+
+  .navbar .sub-menu-show li a {
+    &:hover {
+      color: $brand-1;
+      text-decoration: none;
+    }
+  }
+
+  .navbar .top-nav ul li {
+    padding: 0 2px;
+    a {
+      &:hover {
+        color: $brand-1;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .hs-item-has-children:hover .hs-menu-children-wrapper {
+    padding: 0 0 0 0;
+  }
+
+  footer .row {
+    text-align: center;
+  }
+
+  .navbar .top-nav {
+    .col-12 {
+      color: $white;
+      display: flex;
+      flex-direction: column-reverse;
+      .top-nav-social {
+        text-align: left;
+        margin-left: 6px;
+        margin-top: 5px;
+        a {
+          color: $white;
+          font-size: 14px;
+          .fab {
+            font-size: 30px;
+            margin: 12px;
+          }
+          &:hover {
+            color: $brand-1;
+          }
+        }
+      }
+    }
+  }
+
+  .top-nav .row span {
+    padding: 7px 0 6px 22px;
+  }
+
+  footer {
+    .col-10 {
+      margin: 0 auto;
+      float: none;
+      .col-2 {
+        width: 50%;
+      }
+    }
+
+    .col-2 {
+      width: 100%;
+      text-align: center;
+      img {
+        padding: 15px;
+        width: 180px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 42px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  h5,
+  h6 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  [class*="col-"] {
+    width: 96%;
+    padding: 0;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .home section.flexible .row ul li p {
+    text-align: center;
+  }
+
+  .home section .row ul li {
+    display: block;
+  }
+
+  .mobHide {
+    display: none;
+  }
+
+  .mobile-mt {
+    margin-top: 40px;
+  }
+
+  .homepage .grey-box .box-heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section.three-by-three-rt .grey-box {
+    min-height: auto;
+    text-align: center;
+  }
+
+  .homepage .seven-rt .col-3 {
+    width: 96%;
+    float: none;
+  }
+
+  .homepage .acc-button .acc-content {
+    width: 90%;
+  }
+
+  .homepage .grey-box-gbb {
+    min-height: auto;
+    ul {
+      width: 250px;
+      text-align: left;
+      margin: 0 auto;
+    }
+  }
+
+  .hs-blog-post .related-posts-feed .rel-posts-image {
+    display: none;
+  }
+
+  .hs-blog-post .related-posts-feed.section .blog_info {
+    position: relative;
+    left: initial;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .hs-blog-post .related-posts-feed.section h2 {
+    text-align: center;
+  }
+}
