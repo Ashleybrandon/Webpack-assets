@@ -3,6 +3,7 @@
 Simple webpack setup that compiles Sass and JS.
 
 To setup:
+- cd assets
 - npm install
 - npm run dev
 
